@@ -4,6 +4,6 @@ FROM alpine:latest
 RUN \
   apk update && \
   apk -y upgrade && \
-  apk add -y curl git wget
+  apk add --no-cache bash curl git
 
 CMD ["bash"]
