@@ -5,7 +5,10 @@ RUN \
   apk update && \
   apk upgrade && \
   apk add --no-cache bash curl git && \
-  chmod -R 755 .
+
+COPY . /src
+
+RUN chmod -R 755 /src
 
 USER root
 
