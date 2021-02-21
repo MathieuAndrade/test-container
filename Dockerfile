@@ -6,6 +6,8 @@ RUN \
   apk upgrade && \
   apk add --no-cache bash curl git
 
+WORKDIR .
+
 USER root
 
 CMD ["bash"]
