@@ -4,8 +4,8 @@ FROM node:current-alpine
 RUN \
   apk update && \
   apk upgrade && \
-  apk add --no-cache bash curl git && \
-  npm config set unsafe-perm true
+  apk add --no-cache bash curl git
 
+USER node
 
 CMD ["bash"]
