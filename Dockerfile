@@ -2,8 +2,8 @@ FROM alpine:latest
 
 # Install.
 RUN \
-  apt-get update && \
-  apt-get -y upgrade && \
-  apt-get install -y curl git wget && \
+  apk update && \
+  apk -y upgrade && \
+  apt add -y curl git wget
 
 CMD ["bash"]
