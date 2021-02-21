@@ -4,8 +4,7 @@ FROM node:current-alpine
 RUN \
   apk update && \
   apk upgrade && \
-  apk add --no-cache bash curl git && \
-  npm install yarn -g
+  apk add --no-cache bash curl git
 
 
 CMD ["bash"]
