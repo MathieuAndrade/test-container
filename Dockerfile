@@ -6,6 +6,6 @@ RUN \
   apk upgrade && \
   apk add --no-cache bash curl git
 
-USER node
+USER root
 
 CMD ["bash"]
